@@ -123,3 +123,4 @@ C:\Users\miguel.pacheco\Documents\Miguel\api.library\src\api.library\obj\Debug\n
 C:\Users\miguel.pacheco\Documents\Miguel\api.library\src\api.library\obj\Debug\net10.0\api.library.pdb
 C:\Users\miguel.pacheco\Documents\Miguel\api.library\src\api.library\obj\Debug\net10.0\api.library.genruntimeconfig.cache
 C:\Users\miguel.pacheco\Documents\Miguel\api.library\src\api.library\obj\Debug\net10.0\ref\api.library.dll
+C:\Users\miguel.pacheco\Documents\Miguel\api.library\src\api.library\obj\Debug\net10.0\api.library.sourcelink.json

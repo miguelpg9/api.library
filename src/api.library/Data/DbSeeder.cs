@@ -17,7 +17,7 @@ public static class DbSeeder
             FirstName = "Gabriel",
             LastName = "García Márquez",
             Nationality = "Colombiano",
-            BirthDate = new DateTime(1927, 3, 6),
+            BirthDate = ToUtc(1927, 3, 6),
             Biography = "Escritor y periodista colombiano, premio Nobel de Literatura en 1982.",
         };
 
@@ -26,7 +26,7 @@ public static class DbSeeder
             FirstName = "Isabel",
             LastName = "Allende",
             Nationality = "Chilena",
-            BirthDate = new DateTime(1942, 8, 2),
+            BirthDate = ToUtc(1942, 8, 2),
             Biography = "Escritora chilena, una de las autoras más leídas en español.",
         };
 
@@ -35,7 +35,7 @@ public static class DbSeeder
             FirstName = "Miguel",
             LastName = "de Cervantes",
             Nationality = "Español",
-            BirthDate = new DateTime(1547, 9, 29),
+            BirthDate = ToUtc(1547, 9, 29),
             Biography = "Autor del Quijote, la obra cumbre de la literatura en español.",
         };
 
@@ -120,4 +120,7 @@ public static class DbSeeder
 
         await db.SaveChangesAsync();
     }
+
+    private static DateTime ToUtc(int year, int month, int day)
+        => DateTime.SpecifyKind(new DateTime(year, month, day), DateTimeKind.Utc);
 }
